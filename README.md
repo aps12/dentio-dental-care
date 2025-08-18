@@ -105,19 +105,6 @@ Deploy easily on [Vercel](https://vercel.com/) or any platform supporting Next.j
 
 ---
 
-## Credits & Inspiration
-
-- Inspired by [dentio.co.in](https://dentio.co.in/) and [dentique.co.in](https://dentique.co.in/).
-- Icons from [Heroicons](https://heroicons.com/) and custom SVGs.
-
----
-
-## License
-
-This project is for demonstration and educational purposes. For commercial use, please consult the project owner.
-
----
-
 ## Contact
 
 Dentio Dental Care, Hinjewadi, Pune 411057  
