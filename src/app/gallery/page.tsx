@@ -34,7 +34,7 @@ export default function Gallery() {
   const getDisplayImages = () => {
     const result = [];
     for (let offset = -2; offset <= 2; offset++) {
-      let idx = (currentIndex + offset + images.length) % images.length;
+      const idx = (currentIndex + offset + images.length) % images.length;
       result.push({ ...images[idx], offset });
     }
     return result;
@@ -128,37 +128,16 @@ export default function Gallery() {
               &lt;
             </button>
             <div className="relative flex items-center justify-center h-full w-full z-10">
-              {displayImages.map(({ src, caption, offset }, i) => {
+              {displayImages.map(({ src, caption, offset }) => {
                 // Responsive translateX for mobile/desktop
                 const isMobile = typeof window !== 'undefined' && window.innerWidth < 640;
-                let scale = 1, blur = 0, z = 10, opacity = 1, translateX = 0, rotateY = 0, shadow = "";
-                let baseX = isMobile ? 120 : 340;
-                let farX = isMobile ? 220 : 600;
-                if (offset === 0) {
-                  scale = 1.05;
-                  blur = 0;
-                  z = 40;
-                  opacity = 1;
-                  translateX = 0;
-                  rotateY = 0;
-                  shadow = "shadow-2xl";
-                } else if (Math.abs(offset) === 1) {
-                  scale = 0.7;
-                  blur = 6;
-                  z = 20;
-                  opacity = 0.7;
-                  translateX = offset * baseX;
-                  rotateY = offset * -18;
-                  shadow = "shadow-xl";
-                } else if (Math.abs(offset) === 2) {
-                  scale = 0.45;
-                  blur = 14;
-                  z = 10;
-                  opacity = 0.18;
-                  translateX = offset * farX;
-                  rotateY = offset * -35;
-                  shadow = "shadow";
-                }
+                const scale = offset === 0 ? 1.05 : Math.abs(offset) === 1 ? 0.7 : 0.45;
+                const blur = offset === 0 ? 0 : Math.abs(offset) === 1 ? 6 : 14;
+                const z = offset === 0 ? 40 : Math.abs(offset) === 1 ? 20 : 10;
+                const opacity = offset === 0 ? 1 : Math.abs(offset) === 1 ? 0.7 : 0.18;
+                const translateX = offset === 0 ? 0 : offset * (isMobile ? (Math.abs(offset) === 1 ? 120 : 220) : (Math.abs(offset) === 1 ? 340 : 600));
+                const rotateY = offset === 0 ? 0 : offset * (Math.abs(offset) === 1 ? -18 : -35);
+                const shadow = offset === 0 ? "shadow-2xl" : Math.abs(offset) === 1 ? "shadow-xl" : "shadow";
                 return (
                   <motion.div
                     key={src + offset + currentIndex}
