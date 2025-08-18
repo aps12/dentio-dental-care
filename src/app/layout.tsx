@@ -94,77 +94,23 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-br from-blue-100 via-white to-cyan-100 min-h-screen`}
       >
-        {/* Global NavBar */}
-        <header>
-          <nav className="sticky top-0 z-40 w-full bg-white/80 backdrop-blur-md shadow-md border-b border-cyan-100">
-            <div className="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-between h-20">
-              <Link href="/" className="flex items-center gap-3 group">
-                <Image
-                  src="/logo.png"
-                  alt="Dentio Logo"
-                  width={44}
-                  height={44}
-                  className="rounded-full shadow-md border-2 border-cyan-500 group-hover:scale-105 transition-transform duration-200"
-                />
-                <span className="text-2xl font-extrabold text-blue-900 tracking-tight group-hover:text-cyan-700 transition-colors duration-200">
-                  Dentio Dental Care
-                </span>
-              </Link>
-              {/* Desktop Nav */}
-              <div className="hidden md:flex gap-2 lg:gap-4 items-center">
-                {[
-                  { href: "/", label: "Home" },
-                  { href: "/about", label: "About" },
-                  { href: "/services", label: "Services" },
-                  { href: "/team", label: "Team" },
-                  { href: "/gallery", label: "Gallery" },
-                  { href: "/faqs", label: "FAQs" },
-                  { href: "/contact", label: "Contact" },
-                ].map((link) => (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    className="px-4 py-2 rounded-full font-semibold text-blue-800 hover:bg-cyan-100 hover:text-cyan-700 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-cyan-300"
-                  >
-                    {link.label}
-                  </Link>
-                ))}
-                <a
-                  href="https://dentio.dentostack.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="ml-2 bg-gradient-to-r from-cyan-600 to-blue-600 text-white px-5 py-2 rounded-full font-bold shadow hover:scale-105 hover:from-blue-700 hover:to-cyan-700 transition-all duration-200 text-base flex items-center gap-2"
-                >
-                  <svg
-                    className="w-5 h-5 text-white"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M12.293 2.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-9 9a1 1 0 01-.39.242l-4 1a1 1 0 01-1.213-1.213l1-4a1 1 0 01.242-.39l9-9zM5.414 17H17v-1.586l-2-2V15a1 1 0 01-1 1H7.414l-2 2z" />
-                  </svg>
-                  Book Online
-                </a>
-              </div>
-              {/* Mobile Hamburger Menu */}
-              <div className="md:hidden flex items-center">
-                <button
-                  id="mobile-menu-button"
-                  className="p-2 rounded-full focus:outline-none focus:ring-2 focus:ring-cyan-300 hover:bg-cyan-100 transition"
-                  aria-label="Open menu"
-                  type="button"
-                  onClick={() => {
-                    const menu = document.getElementById('mobile-menu-dropdown');
-                    if (menu) menu.classList.toggle('hidden');
-                  }}
-                >
-                  <svg className="w-7 h-7 text-blue-900" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-                  </svg>
-                </button>
-              </div>
-            </div>
-            {/* Mobile Dropdown Menu */}
-            <div id="mobile-menu-dropdown" className="md:hidden hidden bg-white/95 border-b border-cyan-100 px-4 py-4 space-y-2 shadow-lg">
+        {/* Global NavBar - fixed for all pages */}
+        <header className="fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-md shadow-md border-b border-cyan-100">
+          <nav className="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-between h-20">
+            <Link href="/" className="flex items-center gap-3 group">
+              <Image
+                src="/logo.png"
+                alt="Dentio Logo"
+                width={44}
+                height={44}
+                className="rounded-full shadow-md border-2 border-cyan-500 group-hover:scale-105 transition-transform duration-200"
+              />
+              <span className="text-2xl font-extrabold text-blue-900 tracking-tight group-hover:text-cyan-700 transition-colors duration-200">
+                Dentio Dental Care
+              </span>
+            </Link>
+            {/* Desktop Nav */}
+            <div className="hidden md:flex gap-2 lg:gap-4 items-center">
               {[
                 { href: "/", label: "Home" },
                 { href: "/about", label: "About" },
@@ -177,11 +123,7 @@ export default function RootLayout({
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="block w-full px-4 py-3 rounded-xl font-semibold text-blue-800 hover:bg-cyan-100 hover:text-cyan-700 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-cyan-300"
-                  onClick={() => {
-                    const menu = document.getElementById('mobile-menu-dropdown');
-                    if (menu) menu.classList.add('hidden');
-                  }}
+                  className="px-4 py-2 rounded-full font-semibold text-blue-800 hover:bg-cyan-100 hover:text-cyan-700 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-cyan-300"
                 >
                   {link.label}
                 </Link>
@@ -190,14 +132,70 @@ export default function RootLayout({
                 href="https://dentio.dentostack.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full mt-2 bg-gradient-to-r from-cyan-600 to-blue-600 text-white px-4 py-3 rounded-xl font-bold shadow text-center hover:scale-105 hover:from-blue-700 hover:to-cyan-700 transition-all duration-200 text-base"
+                className="ml-2 bg-gradient-to-r from-cyan-600 to-blue-600 text-white px-5 py-2 rounded-full font-bold shadow hover:scale-105 hover:from-blue-700 hover:to-cyan-700 transition-all duration-200 text-base flex items-center gap-2"
               >
+                <svg
+                  className="w-5 h-5 text-white"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M12.293 2.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-9 9a1 1 0 01-.39.242l-4 1a1 1 0 01-1.213-1.213l1-4a1 1 0 01.242-.39l9-9zM5.414 17H17v-1.586l-2-2V15a1 1 0 01-1 1H7.414l-2 2z" />
+                </svg>
                 Book Online
               </a>
             </div>
+            {/* Mobile Hamburger Menu */}
+            <div className="md:hidden flex items-center">
+              <button
+                id="mobile-menu-button"
+                className="p-2 rounded-full focus:outline-none focus:ring-2 focus:ring-cyan-300 hover:bg-cyan-100 transition"
+                aria-label="Open menu"
+                type="button"
+                onClick={() => {
+                  const menu = document.getElementById('mobile-menu-dropdown');
+                  if (menu) menu.classList.toggle('hidden');
+                }}
+              >
+                <svg className="w-7 h-7 text-blue-900" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </button>
+            </div>
           </nav>
+          {/* Mobile Dropdown Menu */}
+          <div id="mobile-menu-dropdown" className="md:hidden hidden bg-white/95 border-b border-cyan-100 px-4 py-4 space-y-2 shadow-lg">
+            {[
+              { href: "/", label: "Home" },
+              { href: "/about", label: "About" },
+              { href: "/services", label: "Services" },
+              { href: "/team", label: "Team" },
+              { href: "/gallery", label: "Gallery" },
+              { href: "/faqs", label: "FAQs" },
+              { href: "/contact", label: "Contact" },
+            ].map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="block w-full px-4 py-3 rounded-xl font-semibold text-blue-800 hover:bg-cyan-100 hover:text-cyan-700 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-cyan-300"
+                onClick={() => {
+                  const menu = document.getElementById('mobile-menu-dropdown');
+                  if (menu) menu.classList.add('hidden');
+                }}
+              >
+                {link.label}
+              </Link>
+            ))}
+            <a
+              href="https://dentio.dentostack.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full mt-2 bg-gradient-to-r from-cyan-600 to-blue-600 text-white px-4 py-3 rounded-xl font-bold shadow text-center hover:scale-105 hover:from-blue-700 hover:to-cyan-700 transition-all duration-200 text-base"
+            >
+              Book Online
+            </a>
+          </div>
         </header>
-        <main className="min-h-[80vh]">{children}</main>
+        <main className="min-h-[80vh] pt-20">{children}</main>
         <footer className="bg-blue-900 text-white pt-10 pb-6 px-2 sm:px-4 mt-auto border-t border-cyan-200/20">
           <div className="max-w-7xl mx-auto flex flex-col sm:flex-col md:flex-row md:justify-between md:items-start gap-8 md:gap-0">
             {/* Logo & Tagline */}
