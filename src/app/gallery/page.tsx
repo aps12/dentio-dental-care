@@ -1,6 +1,7 @@
 "use client";
 import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 import Head from "next/head";
 import { siteMeta } from "../metadata";
 
@@ -274,7 +275,7 @@ export default function Gallery() {
         {/* Persistent WhatsApp Icon */}
         <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-2">
           <a href="https://wa.me/918625098210?text=Hello!%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener noreferrer" className="shadow-lg rounded-full bg-green-500 hover:bg-green-600 p-3 transition-all flex items-center justify-center">
-            <img src="/whatsapp.png" alt="WhatsApp" width={40} height={40} />
+            <Image src="/whatsapp.png" alt="WhatsApp" width={40} height={40} />
           </a>
         </div>
       </div>

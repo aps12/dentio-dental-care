@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { services as allServices } from "../data/services";
 import Head from "next/head";
 import { siteMeta } from "./metadata";
-import { useState, useRef, useEffect } from "react";
+
 
 const popularServices = allServices.filter(s => s.popular);
 
