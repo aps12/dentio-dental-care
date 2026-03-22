@@ -14,7 +14,7 @@ const teamMembers = [
     details: "Dr. Shalini Patel is a highly skilled orthodontist with over a decade of experience in transforming smiles. She specializes in braces, aligners, and digital smile design, and is known for her gentle approach and commitment to patient comfort. Her vision is to make world-class dental care accessible to all."
   },
   {
-    img: "/team2.png",
+    img: "/team4.png",
     name: "Dr. Namrata Chame",
     role: "BDS",
     desc: "General & Family Dentist. Passionate about preventive care and patient education.",

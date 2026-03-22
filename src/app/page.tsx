@@ -92,7 +92,7 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 justify-center">
             {[
               { img: "/team1.png", name: "Dr. Shalini Patel", role: "BDS, MDS (Ortho)", desc: "Founder & Chief Dentist. 12+ years of experience in orthodontics and smile design." },
-              { img: "/team2.png", name: "Dr. Namrata Chame", role: "BDS", desc: "General & Family Dentist. Passionate about preventive care and patient education." },
+              { img: "/team4.png", name: "Dr. Namrata Chame", role: "BDS", desc: "General & Family Dentist. Passionate about preventive care and patient education." },
               { img: "/team3.png", name: "Monica Bisht", role: "Dental Hygienist", desc: "Expert in oral hygiene and gum care. Dedicated to patient comfort and education." },
               { img: "/team2.png", name: "Komal Kamble", role: "Clinic Care Coordinator", desc: "Clinic care coordinator and the first smile you see at Dentio." },
             ].map((t, i) => (
@@ -217,7 +217,7 @@ export default function Home() {
                 <div className="flex items-center gap-2 mt-1">
                   <span className="inline-flex items-center gap-1 bg-red-100 text-red-700 px-3 py-1 rounded-full font-semibold text-sm shadow-sm border border-red-200">
                     <svg className="w-4 h-4 text-red-400" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 2a6 6 0 110 12A6 6 0 0110 4zm0 1a1 1 0 011 1v3.586l2.293 2.293a1 1 0 01-1.414 1.414l-2.586-2.586A1 1 0 019 9V5a1 1 0 011-1z"/></svg>
-                    Wednesday - Closed
+                    Sunday - Closed
                   </span>
                 </div>
               </div>

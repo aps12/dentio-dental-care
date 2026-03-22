@@ -116,7 +116,6 @@ export default function RootLayout({
                 { href: "/about", label: "About" },
                 { href: "/services", label: "Services" },
                 { href: "/team", label: "Team" },
-                { href: "/gallery", label: "Gallery" },
                 { href: "/faqs", label: "FAQs" },
                 { href: "/contact", label: "Contact" },
               ].map((link) => (
@@ -169,7 +168,6 @@ export default function RootLayout({
               { href: "/about", label: "About" },
               { href: "/services", label: "Services" },
               { href: "/team", label: "Team" },
-              { href: "/gallery", label: "Gallery" },
               { href: "/faqs", label: "FAQs" },
               { href: "/contact", label: "Contact" },
             ].map((link) => (
@@ -228,7 +226,6 @@ export default function RootLayout({
                 <Link href="/about" className="hover:text-cyan-300 transition">About</Link>
                 <Link href="/services" className="hover:text-cyan-300 transition">Services</Link>
                 <Link href="/team" className="hover:text-cyan-300 transition">Team</Link>
-                <Link href="/gallery" className="hover:text-cyan-300 transition">Gallery</Link>
                 <Link href="/faqs" className="hover:text-cyan-300 transition">FAQs</Link>
                 <Link href="/contact" className="hover:text-cyan-300 transition">Contact</Link>
               </div>
@@ -245,9 +242,8 @@ export default function RootLayout({
                 <span className="flex items-center gap-2 justify-center md:justify-start">
                   <svg className="w-5 h-5 text-cyan-200" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 20 20"><path strokeLinecap="round" strokeLinejoin="round" d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 2a6 6 0 110 12A6 6 0 0110 4zm0 1a1 1 0 011 1v3.586l2.293 2.293a1 1 0 01-1.414 1.414l-2.586-2.586A1 1 0 019 9V5a1 1 0 011-1z"/></svg>
                   <span className="flex flex-col text-cyan-50 text-sm font-normal">
-                    <span>Mon – Tue: 10:00 AM – 2:00 PM, 5:00 PM – 9:00 PM</span>
-                    <span>Thu – Sun: 10:00 AM – 2:00 PM, 5:00 PM – 9:00 PM</span>
-                    <span className="text-red-200">Wednesday: Closed</span>
+                    <span>Mon – Fri: 10:00 AM – 2:00 PM, 5:00 PM – 9:00 PM</span>
+                    <span className="text-red-200">Sunday: Closed</span>
                   </span>
                 </span>
               </div>

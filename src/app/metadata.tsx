@@ -18,6 +18,6 @@ export const siteMeta = {
     "Mon-Tue 10:00-14:00, 17:00-21:00",
     "Thu-Sun 10:00-14:00, 17:00-21:00"
   ],
-  closed: "Wednesday",
+  closed: "Sunday",
   gmaps: "https://goo.gl/maps/6Qn1Qn1Qn1Qn1Qn1A"
 };
