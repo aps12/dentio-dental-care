@@ -96,16 +96,16 @@ export default function RootLayout({
       >
         {/* Global NavBar - fixed for all pages */}
         <header className="fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-md shadow-md border-b border-cyan-100">
-          <nav className="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-between h-20">
-            <Link href="/" className="flex items-center gap-3 group">
+          <nav className="max-w-7xl mx-auto px-3 sm:px-8 flex items-center justify-between h-16 sm:h-20">
+            <Link href="/" className="flex items-center gap-2 sm:gap-3 group min-w-0">
               <Image
                 src="/logo.png"
                 alt="Dentio Logo"
                 width={44}
                 height={44}
-                className="rounded-full shadow-md border-2 border-cyan-500 group-hover:scale-105 transition-transform duration-200"
+                className="rounded-full shadow-md border-2 border-cyan-500 group-hover:scale-105 transition-transform duration-200 w-9 h-9 sm:w-11 sm:h-11"
               />
-              <span className="text-2xl font-extrabold text-blue-900 tracking-tight group-hover:text-cyan-700 transition-colors duration-200">
+              <span className="text-base sm:text-2xl font-extrabold text-blue-900 tracking-tight group-hover:text-cyan-700 transition-colors duration-200 truncate">
                 Dentio Dental Care
               </span>
             </Link>
@@ -193,7 +193,7 @@ export default function RootLayout({
             </a>
           </div>
         </header>
-        <main className="min-h-[80vh] pt-20">{children}</main>
+        <main className="min-h-[80vh] pt-16 sm:pt-20">{children}</main>
         <footer className="bg-blue-900 text-white pt-10 pb-6 px-2 sm:px-4 mt-auto border-t border-cyan-200/20">
           <div className="max-w-7xl mx-auto flex flex-col sm:flex-col md:flex-row md:justify-between md:items-start gap-8 md:gap-0">
             {/* Logo & Tagline */}
