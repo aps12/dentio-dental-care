@@ -1,23 +1,135 @@
 // SEO & metadata for Dentio Dental Care, Pune, Hinjewadi, Phase 1, Maan Road
 export const siteMeta = {
-  title: "Dentio Dental Care | Best Dentist in Hinjewadi, Pune | Advanced Dental Clinic",
+  title: "Dentio Dental Care | Best Dentist in Hinjewadi, Pune | Braces, Implants & Smile Design",
   description:
-    "Dentio Dental Care is a leading dental clinic in Hinjewadi Phase 1, Pune, offering advanced, gentle, and affordable dental treatments. Book appointments for braces, implants, root canal, smile makeovers, kids dentistry, and more. Conveniently located on Maan Road, near Rajiv Gandhi Infotech Park.",
+    "Dentio Dental Care is a top-rated dental clinic in Hinjewadi Phase 1, Pune, led by Dr. Shalini Patel (BDS, MDS Orthodontics). Offering 45+ advanced treatments including braces & clear aligners, Invisalign, dental implants, All-on-4, root canal, smile design, pediatric dentistry, full mouth rehabilitation, teeth whitening, veneers, gum treatment, laser dentistry & emergency care. Gentle, affordable, and ethical dental care for families. Located at One Avenue, Maan Road near Rajiv Gandhi Infotech Park. Open Mon-Sat. Book your appointment today!",
   keywords:
-    "Dentist in Hinjewadi, Dental Clinic Pune, Best Dentist Pune, Dental Implants Hinjewadi, Braces Pune, Root Canal Pune, Smile Makeover, Kids Dentist, Emergency Dentist, Maan Road, Rajiv Gandhi Infotech Park, Dental Care, Cosmetic Dentistry, Teeth Whitening, Pune Dental Clinic, Family Dentist, dentist near me, dental clinic near me, best dentist near me, root canal near me, teeth whitening near me, dental implants near me, braces near me, kids dentist near me, invisible aligners, painless dentist, dental hospital, dental checkup, dental cleaning, dental filling, wisdom tooth removal, cosmetic dentist, orthodontist, periodontist, prosthodontist, dental surgeon, dental specialist, dental consultation, dental appointment, dental hygiene, dental services, dental crowns, dental bridges, dental veneers, dental bonding, laser dentistry, tmj treatment, teeth pain, tooth extraction, dental emergency, dental x-ray, dental sealants, fluoride treatment, night guard, mouth guard, retainers, post ortho care, sedation dentistry, oral surgery, preventive dentistry, maan road, phase 1, rajiv gandhi infotech park, Pune, Hinjewadi, advanced dental clinic, affordable dentist, gentle dentist, smile design, digital dentistry, oral cancer screening, emergency dental care, full mouth rehabilitation, dentures, partials, dental reviews, top rated dentist, open now, open today, open late, best dental clinic in Pune, best dental clinic in Hinjewadi, best dentist in Hinjewadi, best dentist in Pune, dental care for children, dental care for adults, dental care for seniors, dental offers, dental discounts, dental packages, dental treatment cost, dental price list, dental insurance accepted, walk-in dentist, appointment dentist, dental care near me, dental specialist near me, dental doctor near me, dental office near me, dental practice near me, dental services near me, dental treatment near me, dental checkup near me, dental cleaning near me, dental filling near me, wisdom tooth removal near me, cosmetic dentist near me, orthodontist near me, periodontist near me, prosthodontist near me, dental surgeon near me, dental specialist near me, dental consultation near me, dental appointment near me, dental hygiene near me, dental crowns near me, dental bridges near me, dental veneers near me, dental bonding near me, laser dentistry near me, tmj treatment near me, teeth pain near me, tooth extraction near me, dental emergency near me, dental x-ray near me, dental sealants near me, fluoride treatment near me, night guard near me, mouth guard near me, retainers near me, post ortho care near me, sedation dentistry near me, oral surgery near me, preventive dentistry near me, maan road dentist, phase 1 dentist, rajiv gandhi infotech park dentist, Pune dentist, Hinjewadi dentist, advanced dental clinic Pune, advanced dental clinic Hinjewadi, affordable dentist Pune, affordable dentist Hinjewadi, gentle dentist Pune, gentle dentist Hinjewadi, smile design Pune, digital dentistry Pune, oral cancer screening Pune, emergency dental care Pune, full mouth rehabilitation Pune, dentures Pune, partials Pune, dental reviews Pune, top rated dentist Pune, open now Pune, open today Pune, open late Pune, best dental clinic in Pune, best dental clinic in Hinjewadi, best dentist in Hinjewadi, best dentist in Pune, dental care for children Pune, dental care for adults Pune, dental care for seniors Pune, dental offers Pune, dental discounts Pune, dental packages Pune, dental treatment cost Pune, dental price list Pune, dental insurance accepted Pune, walk-in dentist Pune, appointment dentist Pune, dental care near me Pune, dental specialist near me Pune, dental doctor near me Pune, dental office near me Pune, dental practice near me Pune, dental services near me Pune, dental treatment near me Pune, dental checkup near me Pune, dental cleaning near me Pune, dental filling near me Pune, wisdom tooth removal near me Pune, cosmetic dentist near me Pune, orthodontist near me Pune, periodontist near me Pune, prosthodontist near me Pune, dental surgeon near me Pune, dental specialist near me Pune, dental consultation near me Pune, dental appointment near me Pune, dental hygiene near me Pune, dental crowns near me Pune, dental bridges near me Pune, dental veneers near me Pune, dental bonding near me Pune, laser dentistry near me Pune, tmj treatment near me Pune, teeth pain near me Pune, tooth extraction near me Pune, dental emergency near me Pune, dental x-ray near me Pune, dental sealants near me Pune, fluoride treatment near me Pune, night guard near me Pune, mouth guard near me Pune, retainers near me Pune, post ortho care near me Pune, sedation dentistry near me Pune, oral surgery near me Pune, preventive dentistry near me Pune",
+    "Dentio Dental Care, dentist in Hinjewadi, dental clinic Pune, best dentist Pune, best dentist in Hinjewadi, dental clinic Hinjewadi Phase 1, Dr Shalini Patel dentist Pune, orthodontist Hinjewadi, orthodontist Pune, MDS orthodontist Pune, braces in Pune, braces in Hinjewadi, metal braces Pune, ceramic braces Pune, tooth colored braces, self-ligating braces Pune, lingual braces Hinjewadi, Damon braces, clear aligners Pune, Invisalign Pune, Invisalign Hinjewadi, invisible braces Pune, transparent aligners, aligner treatment cost Pune, dental implants Hinjewadi, dental implants Pune, single tooth implant Pune, multiple dental implants, implant supported bridge, implant supported denture, All-on-4 dental implants Pune, All-on-6 implants, mini dental implants, immediate dental implant, same day dental implant, basal implant Pune, bone grafting for implants, sinus lift surgery Pune, root canal treatment Pune, root canal Hinjewadi, painless root canal, single sitting root canal, rotary root canal, endodontic treatment Pune, root canal cost Pune, smile design Pune, smile makeover Pune, digital smile design, DSD smile design Pune, Hollywood smile Pune, smile transformation, cosmetic dentistry Pune, teeth whitening Pune, teeth whitening Hinjewadi, in-office teeth whitening, laser teeth whitening, Zoom whitening, home teeth whitening kit, dental veneers Pune, porcelain veneers Pune, composite veneers, dental laminates, E-max veneers, dental crowns Pune, zirconia crown Pune, PFM crown, all ceramic crown, CADCAM crown, dental bridges Pune, Maryland bridge, cantilever bridge, pediatric dentist Pune, kids dentist Hinjewadi, child dentist Pune, baby teeth care, pediatric dental care, kids dental checkup, child tooth filling, pulpotomy, pulpectomy, stainless steel crown kids, space maintainer, habit breaking appliance, thumb sucking treatment, tongue thrusting treatment, myofunctional therapy, full mouth rehabilitation Pune, full mouth restoration, complete oral rehabilitation, bite correction, occlusal rehabilitation, complete dentures Pune, partial dentures, flexible dentures, tooth extraction Pune, wisdom tooth removal Pune, surgical extraction, impacted wisdom tooth, wisdom tooth surgery, dental cleaning Pune, teeth cleaning, dental scaling, scaling and root planing, deep dental cleaning, dental polishing, dental filling Pune, tooth colored filling, composite filling, GIC filling, silver filling replacement, mercury free filling, preventive dentistry Pune, dental sealants, pit fissure sealants, fluoride treatment, fluoride varnish, gum treatment Pune, periodontics Pune, gum disease treatment, gingivitis treatment, periodontitis treatment, gum surgery, flap surgery dental, gum grafting, bone grafting dental, laser gum treatment, gummy smile correction, gum contouring, crown lengthening, endodontics Pune, prosthodontics Pune, dental surgery Pune, oral surgery Pune, frenectomy, operculectomy, abscess drainage, biopsy oral, painless dentistry Pune, painless dental treatment, pain free dentist, no pain dentist, gentle dentist, anxiety free dentist, dental anxiety treatment, dental phobia treatment, sedation dentistry Pune, conscious sedation, nitrous oxide dentistry, laughing gas dentist, dental X-ray Pune, digital dental X-ray, RVG dental, OPG X-ray, panoramic X-ray, CBCT dental, dental checkup Pune, oral health checkup, comprehensive dental exam, dental screening, oral cancer screening, TMJ treatment Pune, TMD treatment, jaw pain treatment, jaw clicking treatment, jaw lock treatment, bruxism treatment, teeth grinding treatment, night guard Pune, custom night guard, occlusal splint, sports mouthguard, dental bonding, tooth reshaping, tooth contouring, teeth gap closure, diastema closure, aesthetic dentistry, smile correction, dental makeover, tooth reshaping, dental emergency Pune, emergency dentist Hinjewadi, 24 hour dentist Pune, same day dentist, urgent dental care, toothache treatment, broken tooth repair, knocked out tooth, dental abscess treatment, swollen gum treatment, laser dentistry Pune, dental laser treatment, diode laser dental, soft tissue laser, dental care for seniors, geriatric dentistry, elderly dental care, denture repair, denture reline, dental care special needs, post and core treatment, inlay onlay dental, dental consultation Pune, second opinion dentist, affordable dental clinic Pune, low cost dental clinic, budget dentist Hinjewadi, dental EMI options, dental payment plan, dental cost Pune, dental price list Hinjewadi, family dentist Pune, family dental care, dental care for children, dental care for adults, dental care for seniors, Maan Road dentist, One Avenue Hinjewadi dental, Rajiv Gandhi Infotech Park dentist, Shop 210 One Avenue dentist, Wakad dentist, Balewadi dentist, Baner dentist, Marunji dentist, Tathawade dentist, Pimple Saudagar dentist, Pimple Nilakh dentist, Aundh dentist, dental clinic PCMC, dental clinic Pimpri Chinchwad, dentist Hinjewadi IT park, dental care software professionals, tech park dental clinic, corporate dental care Pune, dental clinic near Infosys Hinjewadi, dental clinic near Wipro Hinjewadi, dental clinic near TCS Hinjewadi, dental clinic near Rajiv Gandhi IT park, dentist near me, dental clinic near me, best dental clinic near me, orthodontist near me, implant dentist near me, root canal near me, teeth whitening near me, braces near me, kids dentist near me, dental hospital near me, top rated dentist Pune, dental reviews Hinjewadi, 5 star dentist Pune, highly rated dental clinic, Google top dentist Pune, trusted dentist Hinjewadi, ethical dentist, transparent dental pricing, dental treatment plan, dental before after, smile transformation results, dental tourism Pune, international dental patients, NRI dental care Pune, dental clinic open today, dental clinic open Saturday, dental clinic evening hours, walk in dentist Pune, same day dental appointment, online dental appointment, book dentist online Hinjewadi, Dentio dentostack, dental appointment booking online, dental clinic with parking, dental clinic One Avenue, best dental clinic Maan Road",
   url: "https://dentio.co.in/",
-  logo: "/logo.png",
+  logo: "https://dentio.co.in/logo.png",
+  ogImage: "https://dentio.co.in/og-image.jpg",
   address: "Shop #210, One Avenue, Maan Rd, Hinjawadi Phase 1, Pune, Maharashtra 411057",
   phone: "+91-8625098210",
+  phoneE164: "+918625098210",
   email: "dent.io210@gmail.com",
+  doctorName: "Dr. Shalini Patel",
+  doctorQualification: "BDS, MDS (Orthodontics & Dentofacial Orthopedics)",
   geo: {
     lat: 18.5917,
     lng: 73.7386
   },
   openingHours: [
-    "Mon-Tue 10:00-14:00, 17:00-21:00",
-    "Thu-Sun 10:00-14:00, 17:00-21:00"
+    "Mo-Sa 10:00-14:00",
+    "Mo-Sa 17:00-21:00"
   ],
   closed: "Sunday",
-  gmaps: "https://goo.gl/maps/6Qn1Qn1Qn1Qn1Qn1A"
+  gmaps: "https://www.google.com/maps/place/DENTIO+Dental+Care/@18.577018,73.7182741,17z",
+  instagram: "https://www.instagram.com/dentiodentalcare/",
+  whatsapp: "https://wa.me/918625098210",
+  bookingUrl: "https://dentio.dentostack.com/",
+  services: [
+    "Braces & Clear Aligners",
+    "Invisible Aligners (Invisalign)",
+    "Ceramic & Tooth-Colored Braces",
+    "Dental Implants",
+    "All-on-4 Dental Implants",
+    "Root Canal Treatment",
+    "Smile Design & Digital Dentistry",
+    "Pediatric Dentistry",
+    "Kids Cavity Treatment & Pulp Therapy",
+    "Full Mouth Rehabilitation",
+    "Teeth Whitening",
+    "Dental Crowns & Bridges",
+    "Zirconia Crowns",
+    "Dental Veneers & Laminates",
+    "Cosmetic Dentistry",
+    "Gummy Smile Correction",
+    "Teeth Gap Closure",
+    "Tooth Extraction & Wisdom Tooth Removal",
+    "Dental Cleaning & Polishing",
+    "Deep Cleaning (Scaling & Root Planing)",
+    "Gum Disease Treatment (Periodontics)",
+    "Laser Gum Treatment",
+    "Tooth-Colored Fillings",
+    "Dental Bonding",
+    "Inlays & Onlays",
+    "Dentures & Partials",
+    "Preventive Dentistry",
+    "Dental Sealants",
+    "Fluoride Treatments",
+    "Dental X-Rays & Diagnostics",
+    "Oral Cancer Screening",
+    "TMJ/TMD Treatment",
+    "Night Guards & Mouthguards",
+    "Sedation Dentistry",
+    "Laser Dentistry",
+    "Oral Surgery (Minor)",
+    "Bone Grafting & Sinus Lift",
+    "Emergency Dental Care",
+    "Early Orthodontic Intervention",
+    "Jaw Correction & Orthopedics",
+    "Space Maintainers",
+    "Habit Breaking Appliances",
+    "Post & Core Treatment",
+    "Retainers & Post-Ortho Care",
+    "Geriatric Dental Care",
+    "Dental Care for Special Needs"
+  ],
+  serviceCategories: [
+    "Preventive & Diagnostic",
+    "Orthodontics",
+    "Restorative",
+    "Cosmetic",
+    "Surgical",
+    "Periodontics (Gum Care)",
+    "Pediatric",
+    "TMJ & Special Care"
+  ],
+  priceRange: "$$",
+  foundingYear: 2023,
+  areaServed: [
+    "Hinjewadi", "Hinjewadi Phase 1", "Hinjewadi Phase 2", "Hinjewadi Phase 3",
+    "Wakad", "Baner", "Balewadi", "Marunji", "Maan", "Maan Road",
+    "Tathawade", "Pimple Saudagar", "Pimple Nilakh", "Aundh",
+    "Pimpri-Chinchwad", "PCMC", "Pune", "Mulshi", "Pirangut"
+  ],
+  nearbyLandmarks: [
+    "Rajiv Gandhi Infotech Park",
+    "One Avenue Mall",
+    "Infosys Hinjewadi",
+    "Wipro Hinjewadi",
+    "TCS Hinjewadi",
+    "Hinjewadi IT Park"
+  ],
+  // Per-page SEO metadata
+  pages: {
+    home: {
+      title: "Dentio Dental Care | Best Dentist in Hinjewadi, Pune | Braces, Implants & Smile Design",
+      description: "Dentio Dental Care — top-rated dental clinic in Hinjewadi Phase 1, Pune. 45+ treatments: braces, Invisalign, implants, root canal, smile design, kids dentistry & more. Led by Dr. Shalini Patel (MDS Ortho). Book now!",
+    },
+    about: {
+      title: "About Dentio Dental Care | Dr. Shalini Patel | Best Dentist in Hinjewadi, Pune",
+      description: "Learn about Dentio Dental Care — a modern, ethical dental clinic in Hinjewadi Phase 1, Pune. Led by Dr. Shalini Patel (BDS, MDS Orthodontics) with an experienced team. Advanced technology, gentle care, and transparent pricing for every patient.",
+    },
+    services: {
+      title: "45+ Dental Services in Hinjewadi, Pune | Braces, Implants, Root Canal | Dentio Dental Care",
+      description: "Explore 45+ dental treatments at Dentio Dental Care, Hinjewadi, Pune. Braces & Invisalign, dental implants, root canal, smile design, teeth whitening, veneers, pediatric dentistry, gum treatment, laser dentistry, full mouth rehabilitation, and emergency care.",
+    },
+    team: {
+      title: "Meet Our Dental Team | Dr. Shalini Patel & Experts | Dentio Dental Care, Pune",
+      description: "Meet the expert dental team at Dentio Dental Care, Hinjewadi, Pune. Led by Dr. Shalini Patel (MDS Orthodontics), our skilled team provides compassionate, advanced dental care for patients of all ages.",
+    },
+    faqs: {
+      title: "FAQs | Dental Treatment Questions Answered | Dentio Dental Care, Hinjewadi, Pune",
+      description: "Find answers to frequently asked questions about dental treatments, appointments, costs, insurance, and care at Dentio Dental Care, Hinjewadi Phase 1, Pune. Braces, implants, root canal, whitening & more.",
+    },
+    contact: {
+      title: "Contact Dentio Dental Care | Book Appointment | Hinjewadi Phase 1, Pune",
+      description: "Contact Dentio Dental Care in Hinjewadi Phase 1, Pune. Call +91-8625098210, email dent.io210@gmail.com, or book online. Located at Shop #210, One Avenue, Maan Road. Open Mon-Sat 10 AM–2 PM, 5–9 PM.",
+    },
+    gallery: {
+      title: "Dental Gallery | Before & After | Smile Transformations | Dentio Dental Care, Pune",
+      description: "View before-and-after dental transformations, clinic photos, and smile makeover results from Dentio Dental Care, Hinjewadi, Pune. See the quality of our braces, implants, veneers, and cosmetic dentistry work.",
+    },
+  },
 };

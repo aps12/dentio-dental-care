@@ -2,144 +2,246 @@
 import { useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import Head from "next/head";
-import { siteMeta } from "../metadata";
 
 const teamMembers = [
   {
     img: "/team1.png",
     name: "Dr. Shalini Patel",
-    role: "BDS, MDS (Ortho)",
-    desc: "Founder & Chief Dentist. 12+ years of experience in orthodontics and smile design.",
-    details: "Dr. Shalini Patel is a highly skilled orthodontist with over a decade of experience in transforming smiles. She specializes in braces, aligners, and digital smile design, and is known for her gentle approach and commitment to patient comfort. Her vision is to make world-class dental care accessible to all."
+    role: "BDS, MDS (Orthodontics & Dentofacial Orthopedics)",
+    title: "Founder & Lead Orthodontist",
+    desc: "With over 12 years of clinical experience, Dr. Shalini is an expert in braces, Invisalign, and digital smile design. Her patient-first approach combines precision with compassion.",
   },
   {
     img: "/team4.png",
     name: "Dr. Namrata Chame",
     role: "BDS",
-    desc: "General & Family Dentist. Passionate about preventive care and patient education.",
-    details: "Dr. Namrata Chame brings a warm, friendly approach to general dentistry. She excels in routine checkups, fillings, and patient counseling, ensuring every patient feels at ease. Her focus is on preventive care and building long-term relationships with families."
+    title: "General & Preventive Dentist",
+    desc: "Dr. Namrata's warm, reassuring approach makes every dental visit comfortable. She specialises in preventive care, restorations, and patient counselling for long-term oral health.",
   },
   {
     img: "/team3.png",
     name: "Monica Bisht",
     role: "Dental Hygienist",
-    desc: "Expert in oral hygiene and gum care. Dedicated to patient comfort and education.",
-    details: "Monica is a certified dental hygienist with a keen eye for detail. She specializes in cleanings, gum therapy, and patient education, helping patients maintain healthy smiles for life. Her gentle touch and clear communication are loved by all ages."
+    title: "Oral Hygiene Specialist",
+    desc: "Monica delivers thorough cleanings and personalised gum therapy with a gentle, reassuring touch. She educates every patient on at-home care routines for lasting results.",
   },
   {
     img: "/team2.png",
     name: "Komal Kamble",
     role: "Clinic Care Coordinator",
-    desc: "Clinic care coordinator and the first smile you see at Dentio.",
-    details: "Komal ensures every patient’s visit is smooth and stress-free. She manages appointments, patient queries, and clinic operations with efficiency and warmth. Her friendly demeanor makes everyone feel welcome."
+    title: "Patient Relations Manager",
+    desc: "Komal is the warm, welcoming face of Dentio. She orchestrates appointments, insurance queries, and follow-ups so that every visit runs seamlessly from start to finish.",
   },
-  {
-    img: "/team1.png",
-    name: "Our Team",
-    role: "All-Female Dental Team",
-    desc: "A dedicated, all-female team providing compassionate, expert care.",
-    details: "Our all-female team is committed to creating a safe, welcoming environment for every patient. We believe in empathy, excellence, and empowering our patients with knowledge and care. Your smile is in the best hands!"
-  }
+];
+
+const values = [
+  { icon: "🤝", title: "Empathy First", text: "We listen, understand, and care — every decision is guided by your comfort." },
+  { icon: "🔬", title: "Clinical Excellence", text: "Advanced training and state-of-the-art technology drive superior outcomes." },
+  { icon: "🛡️", title: "Safe & Inclusive", text: "Our team creates a warm, judgement-free environment for everyone." },
+  { icon: "💡", title: "Patient Education", text: "We empower you with knowledge so you can make confident decisions about your oral health." },
 ];
 
 export default function Team() {
   const [selected, setSelected] = useState<number>(0);
-  const doctors = teamMembers.filter(t => t.name !== "Our Team");
+
   return (
     <>
-      <Head>
-        <title>Meet Our Dentists | Dentio Dental Care, Hinjewadi, Pune</title>
-        <meta name="description" content="Meet the expert dental team at Dentio Dental Care, Hinjewadi, Pune. Experienced dentists for all your dental needs." />
-        <meta name="keywords" content={siteMeta.keywords + ', team, dentists, doctors, Pune, Hinjewadi'} />
-        <link rel="canonical" href={siteMeta.url + 'team'} />
-      </Head>
-      <main className="py-10 px-4 max-w-5xl mx-auto">
-        <motion.h2
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-          className="text-3xl md:text-4xl font-bold mb-4 text-blue-900 text-center"
-        >
-          Meet Our Team
-        </motion.h2>
-        <p className="text-lg md:text-xl text-blue-800 text-center mb-10 max-w-2xl mx-auto font-medium">Meet the passionate professionals who make Dentio Dental Care a welcoming, modern, and patient-first clinic. Our all-female team is dedicated to your comfort and smile.</p>
-        {/* Our Team Card at the Top - Expanded with background image for desktop */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="relative mx-auto mb-10 flex flex-col items-center bg-gradient-to-br from-cyan-50 via-blue-50 to-white rounded-3xl border-2 border-cyan-200 shadow-2xl p-8 w-full max-w-5xl min-h-[340px] md:min-h-[420px] overflow-hidden"
-          tabIndex={0}
-          role="region"
-          aria-label="About Our Team"
-          style={{backgroundImage: 'url(/gallery1.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}}
-        >
-          {/* Overlay for readability */}
-          <div className="absolute inset-0 bg-white/80 pointer-events-none rounded-3xl" />
-          <div className="relative z-10 flex flex-col items-center w-full">
-            <div className="relative w-40 h-40 md:w-56 md:h-56 rounded-full bg-cyan-100 border-4 border-cyan-300 overflow-hidden shadow-2xl flex items-center justify-center mb-6">
-              <Image src="/team1.png" alt="Our Team" width={224} height={224} className="object-cover w-full h-full" />
-              <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-cyan-200/70 to-transparent rounded-b-full" />
-            </div>
-            <div className="text-blue-700 text-xs md:text-sm mb-2 font-medium uppercase tracking-wider text-center">All-Female Dental Team</div>
-            <p className="text-blue-800 text-base md:text-lg mb-2 text-center max-w-2xl">A dedicated, all-female team providing compassionate, expert care.</p>
-            <div className="w-full flex justify-center">
-              <div className="bg-cyan-50 border border-cyan-200 rounded-xl px-6 py-4 shadow-md max-w-2xl text-center mt-2">
-                <span className="block text-blue-900 text-base md:text-lg font-semibold mb-2">Our all-female team is committed to creating a safe, welcoming environment for every patient.</span>
-                <span className="block text-blue-900 text-base md:text-lg font-medium">We believe in <span className="text-cyan-700 font-semibold">empathy</span>, <span className="text-cyan-700 font-semibold">excellence</span>, and empowering our patients with knowledge and care.<br className="hidden md:block" />Your smile is in the best hands!</span>
+      {/* Hero Banner */}
+      <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 overflow-hidden">
+        <div className="absolute inset-0">
+          <Image src="/hero.png" alt="" fill className="object-cover blur-[6px] opacity-[0.06]" sizes="100vw" />
+          <div className="absolute top-0 right-0 w-64 sm:w-96 h-64 sm:h-96 bg-cyan-500 rounded-full blur-3xl opacity-10" />
+          <div className="absolute bottom-0 left-0 w-48 sm:w-72 h-48 sm:h-72 bg-cyan-400 rounded-full blur-3xl opacity-8" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(6,182,212,0.08),transparent_60%)]" />
+        </div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 md:py-24 text-center">
+          <nav className="flex items-center justify-center gap-2 text-sm text-slate-400 mb-6">
+            <a href="/" className="hover:text-cyan-400 transition-colors">Home</a>
+            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" /></svg>
+            <span className="text-cyan-400 font-medium">Our Team</span>
+          </nav>
+          <h1
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4"
+            style={{ fontFamily: "'Playfair Display', serif" }}
+          >
+            <span className="text-white">The Faces Behind </span>
+            <span className="bg-gradient-to-r from-cyan-400 to-cyan-300 bg-clip-text text-transparent">Your Best Smile</span>
+          </h1>
+          <p className="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+            An experienced dental team committed to gentle care, clinical precision, and making every visit a positive experience.
+          </p>
+        </div>
+        <div className="absolute bottom-0 left-0 right-0">
+          <svg viewBox="0 0 1440 56" fill="none" className="w-full"><path d="M0 56h1440V28C1220 0 720 56 360 28S0 56 0 56z" fill="currentColor" className="text-slate-50" /></svg>
+        </div>
+      </section>
+
+      <main className="bg-gradient-to-b from-slate-50 to-white" style={{ fontFamily: "'Inter', system-ui, sans-serif" }}>
+
+        {/* Team Member Tiles as Tabs */}
+        <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mb-8">
+            {teamMembers.map((t, i) => (
+              <button
+                key={t.name}
+                onClick={() => setSelected(i)}
+                className={`flex flex-col items-center gap-2.5 px-3 py-5 rounded-2xl border-2 transition-all duration-200 focus:outline-none w-full
+                  ${selected === i
+                    ? 'bg-cyan-50 border-cyan-400 shadow-lg ring-2 ring-cyan-200'
+                    : 'bg-white border-slate-200 hover:bg-slate-50 hover:border-cyan-200'}`}
+                aria-current={selected === i}
+                aria-label={`Show details for ${t.name}`}
+              >
+                <div className={`w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden border-2 flex-shrink-0 transition-colors ${selected === i ? 'border-cyan-400' : 'border-slate-200'}`}>
+                  <Image src={t.img} alt={t.name} width={80} height={80} className="object-cover w-full h-full" />
+                </div>
+                <div className="flex flex-col items-center text-center">
+                  <span className={`font-bold text-xs sm:text-sm leading-tight ${selected === i ? 'text-cyan-700' : 'text-slate-800'}`}>{t.name}</span>
+                  <span className="text-[10px] sm:text-xs text-cyan-600 font-medium mt-0.5">{t.title}</span>
+                </div>
+                {selected === i && (
+                  <svg className="w-4 h-4 text-cyan-500" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                )}
+              </button>
+            ))}
+          </div>
+
+          {/* Selected member detail panel */}
+          <div className="w-full bg-white rounded-3xl border border-slate-200/80 shadow-xl p-8 sm:p-10">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={selected}
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.35 }}
+                className="flex flex-col md:flex-row items-center gap-6 md:gap-10 w-full"
+              >
+                <div className="relative w-36 h-36 sm:w-44 sm:h-44 md:w-52 md:h-52 rounded-2xl bg-gradient-to-br from-cyan-50 to-slate-50 overflow-hidden border border-slate-200 shadow-md flex-shrink-0">
+                  <Image src={teamMembers[selected].img} alt={teamMembers[selected].name} fill className="object-cover object-top" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/30 to-transparent" />
+                </div>
+                <div className="flex flex-col items-center md:items-start text-center md:text-left">
+                  <span className="inline-block px-3 py-1 text-[11px] font-semibold uppercase tracking-wider bg-cyan-100 text-cyan-700 rounded-full mb-3">
+                    {teamMembers[selected].title}
+                  </span>
+                  <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-1" style={{ fontFamily: "'Playfair Display', serif" }}>
+                    {teamMembers[selected].name}
+                  </h3>
+                  <p className="text-sm font-medium text-cyan-600 mb-4">{teamMembers[selected].role}</p>
+                  <p className="text-base text-slate-600 leading-relaxed max-w-xl">{teamMembers[selected].desc}</p>
+                </div>
+              </motion.div>
+            </AnimatePresence>
+          </div>
+        </section>
+
+        {/* Clinic & Equipment Showcase — uses the referenced image */}
+        <section className="relative bg-slate-900 overflow-hidden">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 items-stretch">
+              {/* Image side */}
+              <div className="relative h-72 sm:h-96 lg:h-auto min-h-[360px]">
+                <Image
+                  src="/clinic-chair.jpg"
+                  alt="Advanced dental operatory at Dentio Dental Care — modern equipment and comfortable treatment chairs"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-slate-900/70 hidden lg:block" />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent lg:hidden" />
+              </div>
+
+              {/* Content side */}
+              <div className="relative flex flex-col justify-center px-6 sm:px-10 lg:px-14 py-12 lg:py-16">
+                <span className="text-cyan-400 text-xs font-bold uppercase tracking-widest mb-3">Our Clinic</span>
+                <h2
+                  className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-5 leading-tight"
+                  style={{ fontFamily: "'Playfair Display', serif" }}
+                >
+                  State-of-the-Art<br className="hidden sm:block" /> Dental Technology
+                </h2>
+                <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
+                  Every operatory at Dentio is fitted with the latest dental units, digital X-ray sensors, and intra-oral cameras — ensuring accurate diagnostics, efficient treatment, and maximum comfort. Our sterilisation protocol exceeds international standards, so you can sit back knowing you&apos;re in a clinically safe environment.
+                </p>
+                <div className="grid grid-cols-2 gap-4">
+                  {[
+                    { num: "45+", label: "Treatments Offered" },
+                    { num: "12+", label: "Years Experience" },
+                    { num: "5000+", label: "Happy Patients" },
+                    { num: "100%", label: "Sterilisation Standard" },
+                  ].map((s) => (
+                    <div key={s.label} className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-center">
+                      <span className="block text-xl sm:text-2xl font-bold text-cyan-400">{s.num}</span>
+                      <span className="block text-[11px] sm:text-xs text-slate-400 mt-0.5">{s.label}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
-        </motion.div>
-        {/* Team Member Tiles as Tabs on Top */}
-        <div className="flex flex-row flex-wrap justify-center gap-4 mb-8">
-          {doctors.map((t, i) => (
-            <button
-              key={t.name}
-              onClick={() => setSelected(i)}
-              className={`flex items-center gap-2 px-4 py-2 rounded-xl border-2 transition-all duration-200 focus:outline-none
-                ${selected === i ? 'bg-cyan-100 border-cyan-400 shadow-lg text-cyan-900' : 'bg-white border-cyan-100 hover:bg-cyan-50 text-blue-800'}`}
-              aria-current={selected === i}
-              aria-label={`Show details for ${t.name}`}
-              style={{ minWidth: '180px' }}
-            >
-              <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-cyan-200 flex-shrink-0">
-                <Image src={t.img} alt={t.name} width={40} height={40} className="object-cover" />
-              </div>
-              <div className="flex flex-col items-start">
-                <span className="font-semibold text-sm md:text-base">{t.name}</span>
-                <span className="text-xs text-cyan-700 uppercase font-medium">{t.role}</span>
-              </div>
-            </button>
-          ))}
-        </div>
-        {/* Selected member details below */}
-        <div className="w-full bg-gradient-to-br from-white via-cyan-50 to-blue-50 rounded-3xl border-2 border-cyan-100 shadow-xl p-8 flex flex-col items-center justify-center">
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={selected}
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: 40 }}
-              transition={{ duration: 0.4 }}
-              className="flex flex-col items-center w-full"
-            >
-              <div className="w-28 h-28 md:w-32 md:h-32 rounded-full mb-4 bg-cyan-100 border-2 border-cyan-300 overflow-hidden shadow-xl flex items-center justify-center">
-                <Image src={doctors[selected].img} alt={doctors[selected].name} width={128} height={128} className="object-cover" />
-              </div>
-              <h3 className="font-semibold text-2xl text-cyan-700 mb-1 text-center">{doctors[selected].name}</h3>
-              <div className="text-blue-700 text-sm mb-2 text-center font-medium uppercase tracking-wider">{doctors[selected].role}</div>
-              <p className="text-blue-800 text-center text-base mb-2">{doctors[selected].desc}</p>
-              <div className="text-blue-900 text-center text-base font-medium mt-2">{doctors[selected].details}</div>
-            </motion.div>
-          </AnimatePresence>
-        </div>
+        </section>
+
+        {/* Our Values */}
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+          <div className="text-center mb-12">
+            <span className="text-cyan-600 text-xs font-bold uppercase tracking-widest">What Drives Us</span>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 mt-2" style={{ fontFamily: "'Playfair Display', serif" }}>
+              Built on Values, Powered by Care
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {values.map((v, i) => (
+              <motion.div
+                key={v.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: i * 0.1 }}
+                className="bg-white rounded-2xl border border-slate-200/80 p-6 text-center hover:shadow-lg hover:border-cyan-200 transition-all duration-300"
+              >
+                <span className="text-3xl block mb-3">{v.icon}</span>
+                <h3 className="text-base font-bold text-slate-900 mb-2">{v.title}</h3>
+                <p className="text-sm text-slate-500 leading-relaxed">{v.text}</p>
+              </motion.div>
+            ))}
+          </div>
+        </section>
+
+        {/* CTA Strip */}
+        <section className="bg-gradient-to-r from-cyan-600 to-cyan-500">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 py-12 sm:py-14 text-center">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-3" style={{ fontFamily: "'Playfair Display', serif" }}>
+              Ready to Meet Us in Person?
+            </h2>
+            <p className="text-cyan-100 text-sm sm:text-base mb-6">Book a consultation and experience the Dentio difference — friendly, thorough, and always transparent.</p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+              <a
+                href="https://dentio.dentostack.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-7 py-3 bg-white text-cyan-700 text-sm font-bold rounded-xl hover:bg-cyan-50 shadow-lg shadow-cyan-800/20 transition-all duration-200"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+                Book Your Appointment
+              </a>
+              <a
+                href="tel:+918625098210"
+                className="inline-flex items-center gap-2 px-7 py-3 bg-cyan-700/40 text-white text-sm font-bold rounded-xl border border-white/20 hover:bg-cyan-700/60 transition-all duration-200"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                Call +91-8625098210
+              </a>
+            </div>
+          </div>
+        </section>
       </main>
-      {/* Persistent WhatsApp Icon */}
-      <a href="https://wa.me/918625098210?text=Hello!%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener noreferrer" className="fixed bottom-6 right-6 z-50 shadow-lg rounded-full bg-green-500 hover:bg-green-600 p-3 transition-all flex items-center justify-center">
-        <Image src="/whatsapp.png" alt="WhatsApp" width={40} height={40} />
+
+      {/* WhatsApp FAB */}
+      <a href="https://wa.me/918625098210?text=Hello!%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener noreferrer" className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 md:bottom-8 md:right-8 z-50 shadow-lg hover:shadow-2xl rounded-full bg-green-600 hover:bg-green-700 p-3 sm:p-4 transition-all flex items-center justify-center group">
+        <Image src="/whatsapp.png" alt="WhatsApp" width={28} height={28} className="group-hover:scale-110 transition-transform sm:w-8 sm:h-8" />
       </a>
     </>
   );

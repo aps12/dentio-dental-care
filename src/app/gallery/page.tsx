@@ -2,8 +2,7 @@
 import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import Head from "next/head";
-import { siteMeta } from "../metadata";
+
 
 const allImages = [
   { src: "/gallery1.png", type: "Clinic", caption: "Reception & Waiting Area" },
@@ -52,12 +51,7 @@ export default function Gallery() {
 
   return (
     <>
-      <Head>
-        <title>Gallery | Dentio Dental Care, Hinjewadi, Pune</title>
-        <meta name="description" content="View our dental clinic, patient smiles, and advanced technology at Dentio Dental Care, Hinjewadi, Pune." />
-        <meta name="keywords" content={siteMeta.keywords + ', gallery, clinic photos, Pune, Hinjewadi'} />
-        <link rel="canonical" href={siteMeta.url + 'gallery'} />
-      </Head>
+
       <div className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden mt-8">
         {/* Animated, full-bleed blurred background */}
         <motion.div
