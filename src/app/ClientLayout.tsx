@@ -76,7 +76,7 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
                 <span className="text-base sm:text-lg lg:text-xl font-bold text-slate-900 tracking-tight leading-tight" style={{ fontFamily: "'Playfair Display', serif" }}>
                   Dentio Dental Care
                 </span>
-                <span className="text-[9px] sm:text-[10px] lg:text-xs text-cyan-600 font-medium -mt-0.5 hidden sm:block tracking-wide">
+                <span className="text-[9px] sm:text-[10px] lg:text-xs text-cyan-600 font-medium -mt-0.5 hidden sm:block tracking-wide italic">
                   Put a Smile in Your Life
                 </span>
               </div>
@@ -225,7 +225,7 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
                 <Image src="/logo.png" alt="Dentio Logo" width={56} height={56} className="rounded-full shadow-md border-2 border-cyan-500/30" />
                 <div>
                   <h3 className="text-white font-bold text-lg">Dentio Dental Care</h3>
-                  <p className="text-xs text-cyan-400">Put a Smile in Your Life</p>
+                  <p className="text-xs text-cyan-400 italic">Put a Smile in Your Life</p>
                 </div>
               </div>
               <p className="text-sm text-slate-400 leading-relaxed">

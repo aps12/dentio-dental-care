@@ -48,7 +48,7 @@ export default function Home() {
                   <span className="block bg-gradient-to-r from-cyan-500 to-cyan-600 bg-clip-text text-transparent">DENTAL CARE</span>
                 </h1>
                 
-                <p className="text-2xl sm:text-3xl text-cyan-600 font-medium mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
+                <p className="text-2xl sm:text-3xl text-cyan-600 font-medium mb-4 italic" style={{ fontFamily: "'Playfair Display', serif" }}>
                   Put a Smile in Your Life
                 </p>
                 
@@ -448,7 +448,7 @@ export default function Home() {
                     />
                     <div className="flex flex-col">
                       <span className="text-lg font-bold">Dentio Dental Care</span>
-                      <span className="text-xs text-slate-500 font-normal">Put a Smile in Your Life</span>
+                      <span className="text-xs text-slate-500 font-normal italic">Put a Smile in Your Life</span>
                     </div>
                   </div>
                   <div className="flex items-start gap-3 text-slate-600">

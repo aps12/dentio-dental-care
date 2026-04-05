@@ -138,52 +138,6 @@ export default function Team() {
           </div>
         </section>
 
-        {/* Clinic & Equipment Showcase — uses the referenced image */}
-        <section className="relative bg-slate-900 overflow-hidden">
-          <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 items-stretch">
-              {/* Image side */}
-              <div className="relative h-72 sm:h-96 lg:h-auto min-h-[360px]">
-                <Image
-                  src="/clinic-chair.jpg"
-                  alt="Advanced dental operatory at Dentio Dental Care — modern equipment and comfortable treatment chairs"
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-slate-900/70 hidden lg:block" />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent lg:hidden" />
-              </div>
-
-              {/* Content side */}
-              <div className="relative flex flex-col justify-center px-6 sm:px-10 lg:px-14 py-12 lg:py-16">
-                <span className="text-cyan-400 text-xs font-bold uppercase tracking-widest mb-3">Our Clinic</span>
-                <h2
-                  className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-5 leading-tight"
-                  style={{ fontFamily: "'Playfair Display', serif" }}
-                >
-                  State-of-the-Art<br className="hidden sm:block" /> Dental Technology
-                </h2>
-                <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
-                  Every operatory at Dentio is fitted with the latest dental units, digital X-ray sensors, and intra-oral cameras — ensuring accurate diagnostics, efficient treatment, and maximum comfort. Our sterilisation protocol exceeds international standards, so you can sit back knowing you&apos;re in a clinically safe environment.
-                </p>
-                <div className="grid grid-cols-2 gap-4">
-                  {[
-                    { num: "45+", label: "Treatments Offered" },
-                    { num: "12+", label: "Years Experience" },
-                    { num: "5000+", label: "Happy Patients" },
-                    { num: "100%", label: "Sterilisation Standard" },
-                  ].map((s) => (
-                    <div key={s.label} className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-center">
-                      <span className="block text-xl sm:text-2xl font-bold text-cyan-400">{s.num}</span>
-                      <span className="block text-[11px] sm:text-xs text-slate-400 mt-0.5">{s.label}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* Our Values */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
           <div className="text-center mb-12">
